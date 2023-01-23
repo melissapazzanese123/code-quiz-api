@@ -35,7 +35,21 @@ At the scores js file I set the functions to store the initials and the score an
 
 # Deployed link 
 
+https://melissapazzanese123.github.io/code-quiz-api/
+
 # Screenshot link
+
+https://github.com/melissapazzanese123/code-quiz-api/commit/8177324f4e012c9b23f15252ee5d474d81274067#diff-045dc65a83ea40605bb4ffd44136abd7f6096568210adb7edc2074b305038bbf
+
+https://github.com/melissapazzanese123/code-quiz-api/commit/8177324f4e012c9b23f15252ee5d474d81274067#diff-0b5bc8119e1c81b705d9915377eebcc4b51ff41094424ef7a3385b170f043efd
+
+https://github.com/melissapazzanese123/code-quiz-api/commit/8177324f4e012c9b23f15252ee5d474d81274067#diff-dff6243df08021499eab71555ca3b1d80b1b2580414d91c815e666f3e8c8b361
+
+https://github.com/melissapazzanese123/code-quiz-api/commit/8177324f4e012c9b23f15252ee5d474d81274067#diff-cd739cf10068aa88b0b15fa65cae9231b23c5e023cb3d766341fcbf1c96adcc2
+
+https://github.com/melissapazzanese123/code-quiz-api/commit/8177324f4e012c9b23f15252ee5d474d81274067#diff-f7cec7714e23d012514958dbb89e521fc1042cea76aab6be21effc1fa36b4fa0
+
+
 
 
 # Credits
