@@ -1,7 +1,7 @@
 
 //variables to keep track of quiz state 
 let currentQuestionIndex = 0;
-let time = questions.lenght * 15;
+let time = questions.length * 15;
 let timerID;
 
 
@@ -15,7 +15,7 @@ let initialElement = document.getElementById("initials");
 let feedbackElement = document.getElementById("feedback");
 
 
-//This is a function that tells the computer what to do when people click on the correct or wring option in the quiz
+//This is a function 
 function questionClick(){
     if (this.value !== questions[currentQuestionIndex].answer) {
     time -= 15; 
@@ -23,8 +23,6 @@ function questionClick(){
     if(time < 0) { 
         time = 0;
     }
-
-
 
     timerElement.textContent = time;
 
@@ -45,12 +43,12 @@ function questionClick(){
     if(currentQuestionIndex === questions.length) {
         quizEnd()
     } else {
-        getQuestions(); 
+        getQuestion(); 
     }
 }
 
-//this is a function to get the r different choices and questions to be displayed in the quiz
-function getQuestions(){
+//this is a function 
+function getQuestion(){
     let currentQuestion = questions[currentQuestionIndex];
 
     let titleElement = document.getElementById("question-title");
@@ -75,9 +73,7 @@ function getQuestions(){
 }
 
 
-//Functions
-
-//This function tells the computer what to do and what happens next when the timer ends
+//This is a function 
 function quizEnd(){
     clearInterval(timerID);
 
@@ -90,35 +86,34 @@ function quizEnd(){
     questionsElement.setAttribute("class", "hide");
 }
 
-//This function is to tell what computer what to do when the timer reaches zero
+//This is a function 
 function clockTick(){
-time--;
-timerElement.textContent = time;
+    time--;
+    timerElement.textContent = time;
 
-if(time <= 0 ){
-    quizEnd();
-}
-
+    if(time <= 0){
+        quizEnd();
+    }
 } 
 
-//This is a function to start the quiz and run the timer 
+//This is a function 
 function startQuiz (){
-let = startScreenElement = document.getElementById("start-screen");
-startScreenElement.setAttribute("class", "hide");
+    let = startScreenElement = document.getElementById("start-screen");
+    startScreenElement.setAttribute("class", "hide");
 
-questionsElement.removeAttribute("class");
+    questionsElement.removeAttribute("class");
 
-timerID = setInterval(clockTick, 1000)
+    timerID = setInterval(clockTick, 1000)  
 
-timerElement.textContent = time;
+    timerElement.textContent = time;
 
-getQuestions();   
+    getQuestion();
 }
 
 
 
 
-//This function is set to save the score
+//This is a function
 function saveHighScore (){
     let initials = initialElement.value.trim();
     console.log(initials);
@@ -137,14 +132,14 @@ function saveHighScore (){
     }
 }
 
-//Another function for when people press enter in the keyboard
+//This is a function
 function checkForEnter(event) {
     if(event.key === "Enter") {
         saveHighScore();
     }
 }
 
-//These are the events I have
+//These are the events 
 startButton.addEventListener("click", startQuiz);
 
 submitButton.addEventListener("click", saveHighScore);
