@@ -25,3 +25,4 @@ At the getQuestions function I created two variables. The first one let currentq
 
 Then I set the questionClick function to penalise the timer when the answer is wrong, to keep the time equals zero if the time is less than zero and I sued of and else if conditions to tell the computer to write "Correct or Wrong depending on the answer. 
 
+At the scores js file I set the functions to store the initials and the score and to clear the scores. 
